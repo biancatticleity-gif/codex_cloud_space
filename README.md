@@ -5,7 +5,7 @@
 
 ## 环境安装
 
-建议选择 Python 3.12。仓库根目录执行：
+选择 Python 3.12。主要依赖版本已固定，仓库根目录执行：
 
 ```bash
 bash setup.sh
@@ -43,6 +43,9 @@ openpyxl、pytest、ipykernel、nbformat。
 `verify_environment.py` 检查模块导入、一阶艏摇角速度模型的积分解与解析解一致、
 传递函数稳定性、无界面 PNG 导出与 PDF 读写。
 示例是合成的一阶模型，不是已校准的无人艇动力学模型。
+
+GitHub Actions 中的 `Validate research environment` 工作流在 Ubuntu 上执行完整安装和验收。
+它验证 Linux 安装脚本与依赖；通过该检查仍需在实际 Codex 云任务中完成环境验收。
 
 ## 文稿规则
 
